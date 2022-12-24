@@ -27,4 +27,16 @@ MatrixRain(canvas : HTMLCanvasElement, options: {
 `fadeColor : string`         : `Color to fade out`
 <br>
 `fps : number`               : `Frames per second`
+
+<br>
+
+###### methodes
+
+```js
+MatrixRain.resize(width : number, height : number) : void
+```
+`width : number`  : `The new width of the canvas`
+`height : number` : `The new height of the canvas`
+> Resize the canvas.
+
 <br>
