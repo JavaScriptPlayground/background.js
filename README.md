@@ -7,7 +7,7 @@
 ###### constructor
 
 ```js
-MatrixRain(canvas : HTMLCanvasElement, options: {
+MatrixRain(canvas : HTMLCanvasElement, options?: {
     characters : string;
     fontSize : number;
     fontColor : string;
@@ -40,3 +40,25 @@ MatrixRain.resize(width : number, height : number) : void
 > Resize the canvas.
 
 <br>
+
+#### Example
+
+###### code
+
+```js
+import { MatrixRain } from './background/MatrixRain.js'
+
+// get the canvas element by id
+const canvas = document.getElementById('background')
+
+// create new MatrixRain
+const matrixRain = new MatrixRain(canvas)
+
+// resize to full window width and height
+matrixRain.resize(window.innerWidth, window.innerHeight)
+
+window.addEventListener('resize', () => {
+    background.resize(window.innerWidth, window.innerHeight)
+})
+
+```
