@@ -62,3 +62,31 @@ window.addEventListener('resize', () => {
 })
 
 ```
+```js
+import { MatrixRain } from './background/MatrixRain.js'
+
+// get the canvas element by id
+const canvas = document.getElementById('background')
+
+// get context of canvas
+const ctx = canvas.getContext('2d')
+
+// create linear gradient
+const gradient = ctx.createLinearGradient(window.innerWidth / 2, 0, window.innerWidth / 2, window.innerHeight)
+gradient.addColorStop(0.0, 'red')
+gradient.addColorStop(0.2, 'yellow')
+gradient.addColorStop(0.4, 'green')
+gradient.addColorStop(0.6, 'cyan')
+gradient.addColorStop(0.8, 'blue')
+gradient.addColorStop(1.0, 'magenta')
+
+// create new MatrixRain
+const matrixRain = new MatrixRain(canvas, {fontColor: gradient})
+
+// resize to full window width and height
+matrixRain.resize(window.innerWidth, window.innerHeight)
+
+window.addEventListener('resize', () => {
+    background.resize(window.innerWidth, window.innerHeight)
+})
+```
