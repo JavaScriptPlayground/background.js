@@ -131,8 +131,9 @@ class Symbol {
         ctx.fillStyle = color
         
         // set random character
+        const symbols = [...characters]; 
         ctx.fillText(
-            characters.charAt(Math.floor(Math.random() * characters.length)),
+            symbols[Math.floor(Math.random() * symbols.length)],
             (this.#columnIndex * fontSize) + offset,
             this.#rowIndex * fontSize
         )
