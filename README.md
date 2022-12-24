@@ -17,6 +17,7 @@ MatrixRain(canvas : HTMLCanvasElement, options: {
 ```
 `canvas : HTMLCanvasElement` : `The background canvas`
 <br>
+<br>
 `characters : string`        : `Character string to display`
 <br>
 `fontSize : number`          : `Font size`
