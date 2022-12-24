@@ -43,7 +43,7 @@ MatrixRain.resize(width : number, height : number) : void
 
 #### Example
 
-###### code
+###### normal
 
 ```js
 import { MatrixRain } from './background/MatrixRain.js'
@@ -62,6 +62,9 @@ window.addEventListener('resize', () => {
 })
 
 ```
+
+###### linear gradient
+
 ```js
 import { MatrixRain } from './background/MatrixRain.js'
 
