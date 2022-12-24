@@ -2,6 +2,8 @@
 
 ### background/MatrixRain.js
 
+![image](https://user-images.githubusercontent.com/62719703/209452401-2e50ed32-5134-4d1f-960f-c80f9f1ca0d7.png)
+
 #### Syntax
 
 ###### constructor
