@@ -93,3 +93,4 @@ window.addEventListener('resize', () => {
     background.resize(window.innerWidth, window.innerHeight)
 })
 ```
+----
