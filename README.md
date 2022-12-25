@@ -60,7 +60,7 @@ const matrixRain = new MatrixRain(canvas)
 matrixRain.resize(window.innerWidth, window.innerHeight)
 
 window.addEventListener('resize', () => {
-    background.resize(window.innerWidth, window.innerHeight)
+    matrixRain.resize(window.innerWidth, window.innerHeight)
 })
 
 ```
@@ -92,7 +92,7 @@ const matrixRain = new MatrixRain(canvas, {fontColor: gradient})
 matrixRain.resize(window.innerWidth, window.innerHeight)
 
 window.addEventListener('resize', () => {
-    background.resize(window.innerWidth, window.innerHeight)
+    matrixRain.resize(window.innerWidth, window.innerHeight)
 })
 ```
 ----
